@@ -1,0 +1,125 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: #000;
+  background-position: center center;
+}
+
+#show {
+  display: none;
+}
+
+#clock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  font-family: "等线 Light", "Microsoft Yahei Light";
+  font-size: 200px;
+  text-shadow: 0 0 20px yellow;
+  z-index: 10;
+}
+
+#clock .sec {
+  font-size: 1em;
+}
+
+#time {
+  position: relative;
+}
+
+#clock .st {
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  font-size: 0.25em;
+  line-height: 1;
+}
+
+#can {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#slideshow img.active {
+  opacity: 1;
+}
+
+img.active {
+  opacity: 1;
+}
+
+#slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -99999;
+  background: center top no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+}
+
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -99999;
+  background: center top no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity 1.6s linear;
+}
+
+#DayNight {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-left: -250px;
+  text-align: center;
+  line-height: 20;
+  font-family: "等线 Light", "Microsoft Yahei Light";
+  font-size: 0.6em;
+  z-index: 10;
+  width: 500px;
+  height: 50px;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#bg canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
